@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+$font: 'Montserrat', sans-serif;
+
+.div{
+    width: 1920px;
+    height: 400px;
+    background: #184979 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: relative;
+    h1{
+        margin: 0;
+        padding: 0;
+        /* Layout Properties */
+        position: absolute;
+        top: 157px;
+        left: 254px;
+        width: 730px;
+        height: 86px;
+        /* UI Properties */
+        text-align: left;
+        font: normal normal normal 70px/90px $font;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        font-family: mon;
+    }
+}
