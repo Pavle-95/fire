@@ -5,7 +5,10 @@ const SearchBar = () =>{
         <div className={style.form}>
             <form>
                 <input type="text" placeholder='Search' />
-                <input type="text" placeholder='Filter by author name' />       
+                <select id="author">  
+                  <option>Filter by author name</option>
+  
+                </select>
             </form>
         </div>
     )

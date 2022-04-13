@@ -2,4 +2,11 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    .App{
+        section{
+            div:first-child{
+                flex: 0 0 66%;
+            }
+        }
+    }
 }

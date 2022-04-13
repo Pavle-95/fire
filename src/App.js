@@ -1,4 +1,5 @@
 import './App.scss'
+import DisplayJobs from './components/displaJobs/displayJobs';
 import Header from './components/header/header';
 import SearchBar from './components/searchBar/searchBar';
 
@@ -10,6 +11,8 @@ function App() {
         />
 
         <SearchBar />
+
+        <DisplayJobs/>
 
 
     </div>

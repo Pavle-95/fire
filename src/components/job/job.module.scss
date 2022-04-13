@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+.div{
+    flex: 0 0 32%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 2px 3px 43px #566A8A14;
+    border-radius: 10px;
+    opacity: 1;
+    margin: 15px 0px;
+    h2{
+        padding: 20px 30px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 35px;
+        text-align: left;
+        font: normal normal 600 30px/35px Montserrat;
+        letter-spacing: 0px;
+        color: #2C2C37;
+        opacity: 1;
+    }
+    p{
+        padding: 20px 30px;
+        text-align: left;
+        font: normal normal normal 16px/25px Segoe UI;
+        letter-spacing: 0px;
+
+    }
+    button{
+        margin: 60px 0px 20px 30px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        font: normal normal medium 16px/90px Montserrat;
+        letter-spacing: 0px;
+        color: #2C2C37;
+        opacity: 1;
+        font-size: 16px;
+        span{
+            font-size: 1.2rem;
+        }
+    }
+}
