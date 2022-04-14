@@ -1,0 +1,21 @@
+.pagination{
+    ul{
+        list-style: none;
+        justify-content: center;
+        display: flex;
+        margin: 50px 0 100px 0;
+        li{
+            a{
+                padding: 0 10px 0 10px;
+                text-decoration: none;
+            } 
+            a:focus::after{
+                display: block;
+                content: '';
+                width: 20px;
+                height: 4px;
+                background: #1298D2;
+            }
+        }
+    }
+}

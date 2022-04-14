@@ -3,18 +3,12 @@ import DisplayJobs from './components/displaJobs/displayJobs';
 import Header from './components/header/header';
 import SearchBar from './components/searchBar/searchBar';
 
-function App() {
+function App() {  
   return (
     <div className="App">
-        <Header 
-        number = {11}
-        />
-
+        <Header />
         <SearchBar />
-
-        <DisplayJobs/>
-
-
+        <DisplayJobs />
     </div>
   );
 }
