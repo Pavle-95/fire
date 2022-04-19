@@ -4,6 +4,7 @@ import React, {useState, useEffect} from 'react';
 const Header = () =>{
 
     const [posts, setPosts] = useState();
+    
 
     useEffect(() =>{
         fetch('https://jsonplaceholder.typicode.com/posts')

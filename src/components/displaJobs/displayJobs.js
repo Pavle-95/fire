@@ -1,8 +1,11 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React, {useState, useEffect} from 'react';
 import style from './displayJobs.module.scss'
+import { Link } from 'react-router-dom';
 
 import Job from '../job/job';
 import Pagination from '../pagination/pagination';
+import Single from '../single/single';
 
 
 
@@ -35,26 +38,28 @@ const DisplayJobs = () => {
 
 
     return (
-        <div>
-        <section className={style.section}>
 
-        {currentJobs.map((d,idx) =>{
-            return (
-                <Job 
-                    tittle={currentJobs[idx].title}
-                    text={currentJobs[idx].body}
+                <div>
+
+                <section className={style.section}>
+
+                {currentJobs.map((d,idx) =>{
+                    return (
+                        <Job 
+                            tittle={currentJobs[idx].title}
+                            text={currentJobs[idx].body}
+                            pera={currentJobs[idx].id}
+                        />
+                    )
+                })}
+                </section>
+                <Pagination 
+                    jobsPerPage={jobPerPage}
+                    totalJobs={data.length}
+                    changePage={changePage} 
                 />
-            )
-        })}
-        </section>
-        <Pagination 
-            jobsPerPage={jobPerPage}
-            totalJobs={data.length}
-            changePage={changePage} 
-         />
-        </div>
-        
-        
+
+            </div>
     )
 }
 

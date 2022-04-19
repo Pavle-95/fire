@@ -9,10 +9,9 @@
     margin: 15px 0px;
     h2{
         padding: 20px 30px;
-        font-family: 'Montserrat', sans-serif;
         line-height: 35px;
         text-align: left;
-        font: normal normal 600 30px/35px Montserrat;
+        font: normal normal 600 30px/35px 'Montserrat';
         letter-spacing: 0px;
         color: #2C2C37;
         opacity: 1;
@@ -20,7 +19,7 @@
     p{
         padding: 0px 30px;
         text-align: left;
-        font: normal normal normal 16px/25px Segoe UI;
+        font: normal normal normal 16px/25px 'Segoe UI';
         letter-spacing: 0px;
 
     }
@@ -30,7 +29,7 @@
         border: none;
         cursor: pointer;
         text-align: left;
-        font: normal normal medium 16px/90px Montserrat;
+        font: normal normal medium 16px/90px 'Montserrat';
         letter-spacing: 0px;
         color: #2C2C37;
         opacity: 1;
