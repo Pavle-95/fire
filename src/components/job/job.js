@@ -1,13 +1,12 @@
-import style from  './job.module.scss'
+import style from './job.module.scss'
 
+const Job = ({ tittle, text, currentJob }) => {
 
-const Job = ({tittle, text, currentJob}) =>{
-
-        const goTo = () =>{
+    const goTo = () => {
         sessionStorage.setItem('body', currentJob.body)
         sessionStorage.setItem('title', currentJob.title)
     }
-    return(
+    return (
         <>
             <div className={style.div} onClick={goTo}>
                 <h2>{tittle}</h2>

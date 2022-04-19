@@ -1,23 +1,20 @@
 import style from '../header/header.module.scss'
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Header = () =>{
-
+const Header = () => {
     const [posts, setPosts] = useState();
-    
 
-    useEffect(() =>{
+    useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
-        .then(response => {
-            return response.json();
-        })
-        .then(resJson =>{
-            setPosts(resJson.length)
-        })
-    },[])
+            .then(response => {
+                return response.json();
+            })
+            .then(resJson => {
+                setPosts(resJson.length)
+            })
+    }, [])
 
-
-    return(
+    return (
         <div className={style.div} >
             <h1>Post found: {posts}</h1>
         </div>
