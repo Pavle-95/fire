@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 
-$font: 'Montserrat', sans-serif;
-
 .div{
     width: 1920px;
     height: 400px;
@@ -16,4 +14,15 @@ $font: 'Montserrat', sans-serif;
         opacity: 1;
         padding: 157px 936px 157px 254px;
     }
+}
+@media (max-width: 1024px) {
+    .div{
+        width: 1024px;
+        height: 300px;
+        h1{
+            padding: 95px 460px 70px 120px;
+            font-size: 2.5rem;
+        }
+    }
+    
 }

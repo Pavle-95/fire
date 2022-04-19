@@ -1,5 +1,5 @@
-.form{
-    form{
+
+form{
         margin: 100px 255px 30px 255px;
         padding: 15px 0;
         background: #F7F7F8 0% 0% no-repeat padding-box;
@@ -11,7 +11,6 @@
             width: 675px;
             height: 40px;
             margin: 0px 20px 0px 15px;
-            /* UI Properties */
             background: #EFEFF2 0% 0% no-repeat padding-box;
             border-radius: 5px;
             border: none;
@@ -22,7 +21,6 @@
             left: 975px;
             width: 675px;
             height: 40px;
-            /* UI Properties */
             background: #EFEFF2 0% 0% no-repeat padding-box;
             color: #B4B7D4;
             border-radius: 5px;
@@ -30,4 +28,19 @@
             opacity: 1;
         }
     }
+
+@media (max-width: 1024px) {
+        form{
+            width: 90%;
+            margin: 50px auto 30px auto;
+            input:first-child{
+                margin: 0px 0px 0px 15px;
+                width: 470px;
+            }
+            :last-child{
+                margin: 0px 0px 0px 15px;
+                width: 400px;
+            }
+        }
+    
 }

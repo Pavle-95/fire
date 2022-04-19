@@ -18,7 +18,7 @@ const Pagination = ({jobsPerPage, totalJobs, changePage}) => {
             {pageNumbers.map((number) =>{
                 return (
                     <li>
-                        <a onClick={() => changePage(number)} href="!#">{number}</a>
+                        <a onClick={() => changePage(number)} href="/">{number}</a>
                     </li>
                 )
             })}

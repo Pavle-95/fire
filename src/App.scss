@@ -10,3 +10,15 @@ body{
         }
     }
 }
+
+@media (max-width: 1024px) {
+    body{
+        .App{
+            section{
+                :first-child{
+                    flex: 0 0 100%;
+                }
+            }
+        }
+    }
+}
