@@ -19,8 +19,8 @@ const Single = () =>{
             <p>{body}</p>
             <hr />
             <div className={style.buttons}>
-                <button><span>&#8592;</span>Previous article</button>
-                <button>Next article <span>&#8594;</span></button>
+                <button disabled><span>&#8592;</span> Previous article</button>
+                <button disabled> Next article <span>&#8594;</span></button>
             </div>
             <section>
                 <div>
