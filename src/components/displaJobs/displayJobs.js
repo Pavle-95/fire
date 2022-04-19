@@ -1,11 +1,10 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React, {useState, useEffect} from 'react';
 import style from './displayJobs.module.scss'
+import styleJob from '../job/job.module.scss'
 import { Link } from 'react-router-dom';
 
 import Job from '../job/job';
 import Pagination from '../pagination/pagination';
-import Single from '../single/single';
 
 
 
@@ -14,7 +13,7 @@ const DisplayJobs = () => {
 
     const [data, setData] = useState([]);
     const [curentPage, setCurentPage] = useState(1);
-    const [jobPerPage] = useState(14)
+    const [jobPerPage] = useState(14);
 
     useEffect(() =>{
         fetch('https://jsonplaceholder.typicode.com/posts')
@@ -45,11 +44,13 @@ const DisplayJobs = () => {
 
                 {currentJobs.map((d,idx) =>{
                     return (
-                        <Job 
-                            tittle={currentJobs[idx].title}
-                            text={currentJobs[idx].body}
-                            pera={currentJobs[idx].id}
-                        />
+                        <Link to='single' className={styleJob.div} style={{textDecoration: 'none'}}>
+                            <Job 
+                                tittle={currentJobs[idx].title}
+                                text={currentJobs[idx].body}
+                                currentJob={currentJobs[idx]}
+                            />
+                        </Link>
                     )
                 })}
                 </section>
@@ -58,6 +59,7 @@ const DisplayJobs = () => {
                     totalJobs={data.length}
                     changePage={changePage} 
                 />
+
 
             </div>
     )

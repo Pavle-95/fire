@@ -1,12 +1,22 @@
 
+import { useState, useEffect } from 'react';
 import style from './single.module.scss'
 
 
-const Single = ({header, body} ) =>{
+const Single = () =>{
+
+    const [title, setTitle] = useState('');
+    const [body, setBody] = useState('')
+
+    useEffect(()=>{
+        setTitle(sessionStorage.getItem('title'))
+        setBody(sessionStorage.getItem('body'))
+    })
+
     return(
         <article className={style.single}>
-            <h1>Non quam lacus suspendisse faucibus interdum posuere.</h1>
-            <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolorLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+            <h1>{title}</h1>
+            <p>{body}</p>
             <hr />
             <div className={style.buttons}>
                 <button><span>&#8592;</span>Previous article</button>

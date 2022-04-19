@@ -4,7 +4,7 @@ body{
     padding: 0;
     .App{
         section{
-            div:first-child{
+            :first-child{
                 flex: 0 0 66%;
             }
         }
